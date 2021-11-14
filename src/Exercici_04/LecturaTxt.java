@@ -4,7 +4,11 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /* Afegeixi la funcionalitat de llegir qualsevol fitxer txt i mostrar per consola el seu contingut.
+PARA EJECUTARLO DESDE CONSOLA:
+  * Escribir: javac Exercici04\LecturaTxt.java
+  * Escribir: java Exercici_04.LecturaTxt
  */
+
 public class LecturaTxt {
 
     //Método para leer la información de un archivo txt
@@ -17,7 +21,7 @@ public class LecturaTxt {
             int c = entrada.read();
 
             //Creamos un bucle While y le indicamos que mientras la variable "c" no sea "-1" (el valor que muestra
-           // el método read al terminar de leer el contenido), nos lo vaya mostrando en consola.
+            // el método read al terminar de leer el contenido), nos lo vaya mostrando en consola.
             while (c!=-1){
                 c = entrada.read();
                 //Realizamos un casteo para que convierta lo que hay en la variable "c" en carácteres e imprimimos el contenido.
